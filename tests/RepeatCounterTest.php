@@ -37,7 +37,6 @@
 
         function test_countRepeats_sameWord()
         {
-
             //Arrange
             $test_countRepeats = new RepeatCounter;
             $word = 'cat';
@@ -48,6 +47,36 @@
 
             //Assert
             $this->assertEquals(1, $result);
+        }
+
+        function test_countRepeats_differentWord()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word = 'cat';
+            $string = 'hat';
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(0, $result);
+
+        }
+
+        function test_countRepeats_capitalWord()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word = 'Cat';
+            $string = 'cat';
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+
         }
     }
 

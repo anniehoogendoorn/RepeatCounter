@@ -1,4 +1,4 @@
---Behavior 1--//Letter counted 1 time
+--Behavior 1--//Same letter
 
 Single letter in Input is counted 1 time in the Comparison_input
 
@@ -6,28 +6,35 @@ Input: 'c'
 Comparison_input: 'c'
 
 
---Behavior 2--//Letter counted 0 times
+--Behavior 2--//Different letter
 
 Single letter in Input is counted 0 times in the Comparison_input
 
 Input: 'c'
 Comparison_input: 'a'
 
---Behavior 3--//Word counted 1 time
+--Behavior 3--//Same word
 
 One word in Input is counted 1 time in Comparison_input
 
 Input: 'cat'
 Comparison_input: 'cat'
 
---Behavior 4-- //Capitalization
+--Behavior 4--//Different word
+
+Word in Input is counted 0 times in Comparison_input
+
+Input: 'cat'
+Comparison_input: 'hat'
+
+--Behavior 5-- //Capitalization
 
 Capitalized word in Input is counted 1 time in lowercase Comparison_input
 
 Input: 'Cat'
 Comparison_input: 'cat'
 
---Behavior 5--//Multiple counts
+--Behavior 6--//Multiple counts
 
 Input word is counted 2 times in Comparison_input string of two words
 
