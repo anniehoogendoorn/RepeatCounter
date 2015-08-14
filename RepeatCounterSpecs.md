@@ -47,3 +47,8 @@ Input word is counted 2 times in Comparison_input string of multiple words
 
 Input: 'cat'
 Comparison_input: 'cat is looking at cat in a hat'
+
+--Behavior 8--//Full word match only
+
+Input: 'cat'
+Comparison_input: 'concatinate'

@@ -108,6 +108,21 @@
             $this->assertEquals(2, $result);
 
         }
+
+        function test_countRepeats_fullWordMatch()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word = 'cat';
+            $string = 'concatinate your sentences';
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(0, $result);
+
+        }
     }
 
  ?>
