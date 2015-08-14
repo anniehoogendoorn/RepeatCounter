@@ -1,6 +1,6 @@
 --Behavior 1--//Letter counted 1 time
 
-Single letter in Input is counted once in the Comparison_input
+Single letter in Input is counted 1 time in the Comparison_input
 
 Input: 'c'
 Comparison_input: 'c'
