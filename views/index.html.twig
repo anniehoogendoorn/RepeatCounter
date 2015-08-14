@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Repeat Counter</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link href="css/custom.css" rel='stylesheet' type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Repeat Counter</h1>
+            <h3>This app counts the number of times a word is repeated in a sentence.</h3>
+
+            <form action="/results" method="post">
+                <div class="form-group">
+                    <label for="word">Please input a word:</label>
+                    <input id="word" name="word" class="form-control" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="string">Please input a sentence:</label>
+                    <input id="string" name="string" class="form-control" type="text" required>
+                </div>
+                <button type="Submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
