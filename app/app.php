@@ -14,12 +14,12 @@
         return $app['twig']->render('index.html.twig');
     });
 
-    // //Results page twig link
-    // $app->post("/results", function() use ($app) {
-    //     $new_RepeatCounter = new RepeatCounter;
-    //     $results = $new_RepeatCounter->countRepeats($_POST['word'], $_POST['string']);
-    //     return $app['twig']->render('results.html.twig', array('result' => $results));
-    // });
+    //Results page twig link
+    $app->post("/results", function() use ($app) {
+        $new_RepeatCounter = new RepeatCounter;
+        $results = $new_RepeatCounter->countRepeats($_POST['word'], $_POST['string']);
+        return $app['twig']->render('results.html.twig', array('result' => $results));
+    });
 
     return $app;
 ?>

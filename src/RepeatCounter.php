@@ -17,7 +17,7 @@
                     array_push($matches_array, $string_word);
                 }
             }
-            var_dump($matches_array);
+            
             return count($matches_array);
 
 

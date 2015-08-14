@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Repeat Counter</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link href="css/custom.css" rel='stylesheet' type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Repeat Counter</h1>
+
+            {% if result is not empty %}
+            <h3>Your word is repeated {{ result }} time('s) in your sentence.</h3>
+            {% endif %}
+
+            <a href="/"><button class="btn btn-default">Home</button></a>
+
+        </div>
+    </body>
+</html>
