@@ -69,13 +69,43 @@
             //Arrange
             $test_countRepeats = new RepeatCounter;
             $word = 'Cat';
-            $string = 'cat';
+            $string = 'cAT';
 
             //Act
             $result = $test_countRepeats->countRepeats($word, $string);
 
             //Assert
             $this->assertEquals(1, $result);
+
+        }
+
+        function test_countRepeats_multipleWordString()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word = 'cat';
+            $string = 'cat in a hat';
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+
+        }
+
+        function test_countRepeats_multipleWordsStringRepeat()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word = 'cat';
+            $string = 'cat looking at a cat in a hat';
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(2, $result);
 
         }
     }
