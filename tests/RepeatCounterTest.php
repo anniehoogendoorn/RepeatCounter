@@ -114,7 +114,7 @@
             //Arrange
             $test_countRepeats = new RepeatCounter;
             $word = 'Cat';
-            $string = 'concatinate your sentences';
+            $string = 'concatinate';
 
             //Act
             $result = $test_countRepeats->countRepeats($word, $string);

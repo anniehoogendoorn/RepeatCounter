@@ -12,19 +12,11 @@
 
             foreach ($string_as_array as $string_word) {
                 if ($string_word == $word) {
-
-                    // return True;
                     array_push($matches_array, $string_word);
                 }
             }
-            
+
             return count($matches_array);
-
-
-
-            //This code works until Spec 8:
-            // $repeats = substr_count(strtolower($string), strtolower($word));
-            // return $repeats;
 
         }
 
