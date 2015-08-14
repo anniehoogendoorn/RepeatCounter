@@ -22,7 +22,7 @@
 
 
 
-            //This code works until the last test:
+            //This code works until Spec 8:
             // $repeats = substr_count(strtolower($string), strtolower($word));
             // return $repeats;
 

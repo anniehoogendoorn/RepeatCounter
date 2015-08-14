@@ -113,7 +113,7 @@
         {
             //Arrange
             $test_countRepeats = new RepeatCounter;
-            $word = 'cat';
+            $word = 'Cat';
             $string = 'concatinate your sentences';
 
             //Act
