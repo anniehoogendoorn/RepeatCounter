@@ -34,9 +34,16 @@ Capitalized word in Input is counted 1 time in lowercase Comparison_input
 Input: 'Cat'
 Comparison_input: 'cat'
 
---Behavior 6--//Multiple counts
+--Behavior 6--//Multiple words
 
-Input word is counted 2 times in Comparison_input string of two words
+Input word is counted 1 time in Comparison_input string of multiple words
 
 Input: 'cat'
-Comparison_input: 'cat cat'
+Comparison_input: 'cat in a hat'
+
+--Behavior 7--//Multiple words & multiple repeats
+
+Input word is counted 2 times in Comparison_input string of multiple words
+
+Input: 'cat'
+Comparison_input: 'cat is looking at cat in a hat'

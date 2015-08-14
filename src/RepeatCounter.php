@@ -4,9 +4,7 @@
     {
         function countRepeats($word, $string)
         {
-            $word = strtolower($word);
-            $string = strtolower($string);
-            $repeats = substr_count($string, $word);
+            $repeats = substr_count(strtolower($string), strtolower($word));
             return $repeats;
 
         }
