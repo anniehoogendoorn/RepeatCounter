@@ -11,7 +11,7 @@ This app returns how frequently a word appears in a string of words.
 
 1. Clone this repository using the command `git clone [link-to-your-repository]`.
 2. Change directory into the top level of the project folder.
-3. Install Composer (link to composer) and then run the command `composer install` to download the Silex and Twig vendor files.
+3. Install Composer (https://getcomposer.org) and then run the command `composer install` to download the Silex and Twig vendor files.
 4. Change directory into the `web` folder and start your server. For example, using PHP’s built-in server: `php -S localhost:8000`
 4. Navigate your browser to the home page at the root address. For example: `http://localhost:8000`.
 
